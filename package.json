@@ -23,6 +23,7 @@
     "back-clean": "rimraf back/lib",
     "back-serve": "nodemon -w back/lib index.js -d 0.1",
     "watch": "npm run back-build-dev && npm run front-build-dev && parallelshell \"npm run back-typescript-watch\"  \"npm run back-serve\" \"npm run front-watch-typescript\" \"npm run front-watch-browserify\"",
+    "build": "npm run front-build-prod && npm run back-build-dev",
     "update-library": "node ./scripts/update-library.js"
   },
   "author": "",
