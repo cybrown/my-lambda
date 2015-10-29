@@ -17,6 +17,10 @@ export interface IHeaders {
 
 export class Http {
 
+    constructor(private root: string) {
+
+    }
+
     get<T>(path: string): Promise<IHttpResponse<T>> {
         return this.sendRequest<T>({method: 'GET', path, headers: {}, body: null});
     }
@@ -34,6 +38,7 @@ export class Http {
     }
 
     private sendRequest<T>(request: IHttpRequest): Promise<IHttpResponse<T>> {
+        request.path = this.root + request.path;
         return new Promise<IHttpResponse<T>>((resolve, reject) => {
             const xhr = new XMLHttpRequest();
             xhr.open(request.method, request.path);
