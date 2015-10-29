@@ -1,0 +1,12 @@
+/node_modules
+/front/public/bower_components
+/front/typings
+/front/public/musics
+/front/public/data.json
+/tmp
+/npm-debug.log
+/front/public/app.js
+/back/lib
+/back/typings
+/lambdas
+/routes.json

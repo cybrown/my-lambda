@@ -1,0 +1,19 @@
+{
+  "name": "my-lambda",
+  "version": "0.0.0",
+  "authors": [
+    "Cy Brown <cy.brown59@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "front/public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
