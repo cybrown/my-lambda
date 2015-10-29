@@ -75,7 +75,7 @@ export class GatewayService {
             this.routes = require(__dirname + '/../../routes.json');
             this.applyRoutes();
         } catch (e) {
-
+            this.routes = [];
         }
     }
 

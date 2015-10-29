@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-all": "npm install && bower install && cd front && tsd install && cd ../back && tsd install",
+    "install-all": "npm install && bower --allow-root install && cd front && tsd install && cd ../back && tsd install",
     "front-watch-typescript": "tsc -p front --watch ",
     "front-typescript": "tsc -p front",
     "front-watch-browserify": "watchify tmp/front/js/application.js -d -o front/public/app.js",
@@ -33,9 +33,6 @@
     "http-server": "^0.8.5",
     "nodemon": "^1.8.0",
     "parallelshell": "^2.0.0",
-    "react": "^0.14.0",
-    "react-bootstrap": "^0.27.1",
-    "react-dom": "^0.14.0",
     "rimraf": "^2.4.3",
     "tsd": "^0.6.5",
     "typescript": "^1.6.2",
