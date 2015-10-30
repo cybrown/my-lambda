@@ -11,7 +11,7 @@ const tap = _.tap;
 let activeTab = 'gateway';
 
 const render = React.render;
-const http = new Http('/');
+const http = new Http('');
 const lambdaStore = new LambdaStore();
 const reactMain = document.getElementById('react-main');
 const lambdaResource = new LambdaResource(http);
